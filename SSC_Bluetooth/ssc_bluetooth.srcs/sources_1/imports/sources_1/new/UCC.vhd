@@ -81,8 +81,8 @@ when inceput=>  if btn_start='1' then
                     stare_urm<=inceput;
                 end if;
 when incarcare_date=>stare_urm<=octet1;
-                     --oc1<=date_intrare(15 downto 8);
-                     --oc2<=date_intrare(7 downto 0);
+                     oc1<=date_intrare(15 downto 8);
+                     oc2<=date_intrare(7 downto 0);
 when octet1=>stare_urm<=transmisie1;
              date_iesire<=oc1;
 when transmisie1=>if activ='0' and done='1' then
