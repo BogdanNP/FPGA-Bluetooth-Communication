@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Wed Dec 21 16:56:05 2022
+| Date         : Wed Dec 21 17:41:42 2022
 | Host         : DESKTOP-QUS580R running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Nexys4_control_sets_placed.rpt
 | Design       : Nexys4
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     9 |
-| Unused register locations in slices containing registers |    21 |
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    54 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,31 +33,38 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              68 |           27 |
-| No           | No                    | Yes                    |               3 |            2 |
-| No           | Yes                   | No                     |              20 |            7 |
-| Yes          | No                    | No                     |              40 |           15 |
+| No           | No                    | No                     |              67 |           32 |
+| No           | No                    | Yes                    |               3 |            1 |
+| No           | Yes                   | No                     |              68 |           17 |
+| Yes          | No                    | No                     |              52 |           28 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              12 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+---------------------+----------------------------------+------------------+------------------+----------------+
-|     Clock Signal    |           Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+---------------------+----------------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG      | b1_rx/r_RX_DV                    |                  |                1 |              1 |
-|  clk_IBUF_BUFG      | btn_c/eqOp                       |                  |                1 |              2 |
-|  clk_IBUF_BUFG      | b1_tx/r_TX_Data[7]_i_1_n_0       |                  |                1 |              8 |
-|  unitate_cc/E[0]    |                                  |                  |                2 |              8 |
-|  clk_IBUF_BUFG      | b1_rx/r_Clk_Count                |                  |                6 |             14 |
-|  clk_IBUF_BUFG      | b1_tx/r_Clk_Count[13]_i_1__0_n_0 |                  |                6 |             15 |
-|  unitate_cc/oc1_n_0 |                                  |                  |                6 |             16 |
-|  clk_IBUF_BUFG      |                                  | btn_c/rst        |                9 |             23 |
-|  clk_IBUF_BUFG      |                                  |                  |               19 |             44 |
-+---------------------+----------------------------------+------------------+------------------+----------------+
++------------------+----------------------------------------------------------+----------------------------------------------+------------------+----------------+
+|   Clock Signal   |                       Enable Signal                      |               Set/Reset Signal               | Slice Load Count | Bel Load Count |
++------------------+----------------------------------------------------------+----------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG   | b1_rx/r_RX_DV                                            |                                              |                1 |              1 |
+|  clk_IBUF_BUFG   | btn_c/eqOp                                               |                                              |                2 |              2 |
+|  clk_IBUF_BUFG   | Inst_TempSensorCtl/Inst_TWICtl/FSM_gray_state[3]_i_1_n_0 |                                              |                3 |              4 |
+|  clk_IBUF_BUFG   | Inst_TempSensorCtl/retryCnt[3]_i_2_n_0                   | Inst_TempSensorCtl/retryCnt[3]_i_1_n_0       |                1 |              4 |
+|  clk_IBUF_BUFG   |                                                          | Inst_TempSensorCtl/Inst_TWICtl/busFreeCnt0_2 |                2 |              8 |
+|  clk_IBUF_BUFG   | b1_tx/r_TX_Data[7]_i_1_n_0                               |                                              |                1 |              8 |
+|  clk_IBUF_BUFG   | Inst_TempSensorCtl/Inst_TWICtl/dataByte[7]_i_1_n_0       |                                              |                4 |              8 |
+|  clk_IBUF_BUFG   | Inst_TempSensorCtl/Inst_TWICtl/sclCnt[7]_i_2_n_0         | Inst_TempSensorCtl/Inst_TWICtl/sclCnt0_0     |                2 |              8 |
+|  clk_IBUF_BUFG   | Inst_TempSensorCtl/Inst_TWICtl/temp_reg[0]               |                                              |                5 |              8 |
+|  unitate_cc/E[0] |                                                          |                                              |                4 |              8 |
+|  clk_IBUF_BUFG   | b1_rx/r_Clk_Count                                        |                                              |                7 |             10 |
+|  clk_IBUF_BUFG   | b1_tx/r_Clk_Count[9]_i_1_n_0                             |                                              |                5 |             11 |
+|  clk_IBUF_BUFG   |                                                          | Inst_TempSensorCtl/clear                     |                5 |             17 |
+|  clk_IBUF_BUFG   |                                                          | Inst_TempSensorCtl/Inst_TWICtl/p_2_out       |                5 |             20 |
+|  clk_IBUF_BUFG   |                                                          | btn_c/AR[0]                                  |                6 |             26 |
+|  clk_IBUF_BUFG   |                                                          |                                              |               28 |             59 |
++------------------+----------------------------------------------------------+----------------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
@@ -65,10 +72,11 @@ Table of Contents
 +--------+-----------------------+
 | 1      |                     1 |
 | 2      |                     1 |
-| 8      |                     2 |
-| 14     |                     1 |
-| 15     |                     1 |
-| 16+    |                     3 |
+| 4      |                     2 |
+| 8      |                     6 |
+| 10     |                     1 |
+| 11     |                     1 |
+| 16+    |                     4 |
 +--------+-----------------------+
 
 

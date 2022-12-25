@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Wed Dec 21 16:56:05 2022
+| Date         : Wed Dec 21 17:41:42 2022
 | Host         : DESKTOP-QUS580R running 64-bit major release  (build 9200)
 | Command      : report_io -file Nexys4_io_placed.rpt
 | Design       : Nexys4
@@ -23,7 +23,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            56 |
+|            58 |
 +---------------+
 
 
@@ -82,8 +82,8 @@ Table of Contents
 | C11        |             | High Range | IO_L13P_T2_MRCC_16           | User IO     |             |      16 |            |      |                     |                      |         |            |           |          |      |                  |
 | C12        |             | High Range | IO_L3P_T0_DQS_AD1P_15        | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | C13        |             | High Range | VCCO_15                      | VCCO        |             |      15 |            |      |                     |                      |    3.30 |            |           |          |      |                  |
-| C14        |             | High Range | IO_L1N_T0_AD0N_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
-| C15        |             | High Range | IO_L12N_T1_MRCC_15           | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
+| C14        | TMP_SCL     | High Range | IO_L1N_T0_AD0N_15            | BIDIR       | LVCMOS33    |      15 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
+| C15        | TMP_SDA     | High Range | IO_L12N_T1_MRCC_15           | BIDIR       | LVCMOS33    |      15 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | C16        |             | High Range | IO_L20P_T3_A20_15            | User IO     |             |      15 |            |      |                     |                      |         |            |           |          |      |                  |
 | C17        | TX          | High Range | IO_L20N_T3_A19_15            | OUTPUT      | LVCMOS33    |      15 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |
 | C18        |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |

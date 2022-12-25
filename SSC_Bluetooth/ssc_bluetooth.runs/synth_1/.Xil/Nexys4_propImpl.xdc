@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth_GIT/SSC_Bluetooth/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc rfile:../../../ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc rfile:../../../ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
@@ -111,3 +111,7 @@ set_property src_info {type:XDC file:1 line:96 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN C17   IOSTANDARD LVCMOS33 } [get_ports { TX }]; #IO_L20N_T3_A19_15 Sch=ja[1]
 set_property src_info {type:XDC file:1 line:97 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN D18   IOSTANDARD LVCMOS33 } [get_ports { RX }]; #IO_L21N_T3_DQS_A18_15 Sch=ja[2]
+set_property src_info {type:XDC file:1 line:202 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN C14   IOSTANDARD LVCMOS33 } [get_ports { TMP_SCL }]; #IO_L1N_T0_AD0N_15 Sch=tmp_scl
+set_property src_info {type:XDC file:1 line:203 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN C15   IOSTANDARD LVCMOS33 } [get_ports { TMP_SDA }]; #IO_L12N_T1_MRCC_15 Sch=tmp_sda

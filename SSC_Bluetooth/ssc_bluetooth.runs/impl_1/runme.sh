@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth_GIT/SSC_Bluetooth/SSC_Bluetooth/ssc_bluetooth.runs/impl_1'
+HD_PWD='D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
