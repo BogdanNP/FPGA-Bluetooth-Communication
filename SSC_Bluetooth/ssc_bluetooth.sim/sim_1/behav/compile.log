@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/HexToDecimalConverter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HexToDecimalConverter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/HexToDecTB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HexToDecTB

@@ -51,12 +51,12 @@ set rc [catch {
   create_msg_db init_design.pb
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.cache/wt [current_project]
-  set_property parent.project_path D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.xpr [current_project]
-  set_property ip_output_repo D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.cache/ip [current_project]
+  set_property webtalk.parent_dir {E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.cache/wt} [current_project]
+  set_property parent.project_path {E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.xpr} [current_project]
+  set_property ip_output_repo {{E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.runs/synth_1/Nexys4.dcp
-  read_xdc D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc
+  add_files -quiet {{E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.runs/synth_1/Nexys4.dcp}}
+  read_xdc {{E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc}}
   link_design -top Nexys4 -part xc7a100tcsg324-1
   write_hwdef -file Nexys4.hwdef
   close_msg_db -file init_design.pb

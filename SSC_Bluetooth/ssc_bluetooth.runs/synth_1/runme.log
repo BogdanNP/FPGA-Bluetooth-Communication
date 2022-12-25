@@ -14,48 +14,52 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14704 
+INFO: Helper process launched with PID 7528 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 282.652 ; gain = 72.895
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 312.488 ; gain = 103.102
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Nexys4' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'Nexys4' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:54]
 	Parameter CLOCKFREQ bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'TempSensorCtl' declared at 'D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:10' bound to instance 'Inst_TempSensorCtl' of component 'TempSensorCtl' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:95]
-INFO: [Synth 8-638] synthesizing module 'TempSensorCtl' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:23]
+INFO: [Synth 8-3491] module 'TempSensorCtl' declared at 'E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:10' bound to instance 'Inst_TempSensorCtl' of component 'TempSensorCtl' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'TempSensorCtl' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:23]
 	Parameter CLOCKFREQ bound to: 100 - type: integer 
 	Parameter CLOCKFREQ bound to: 100 - type: integer 
 	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
-INFO: [Synth 8-3491] module 'TWICtl' declared at 'D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:28' bound to instance 'Inst_TWICtl' of component 'TWICtl' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:128]
-INFO: [Synth 8-638] synthesizing module 'TWICtl' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:92]
+INFO: [Synth 8-3491] module 'TWICtl' declared at 'E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:28' bound to instance 'Inst_TWICtl' of component 'TWICtl' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:128]
+INFO: [Synth 8-638] synthesizing module 'TWICtl' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:92]
 	Parameter CLOCKFREQ bound to: 100 - type: integer 
 	Parameter ATTEMPT_SLAVE_UNBLOCK bound to: 1 - type: bool 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "gray" *) [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:104]
-INFO: [Synth 8-226] default block is never used [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:317]
-INFO: [Synth 8-226] default block is never used [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:335]
-INFO: [Synth 8-226] default block is never used [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:353]
-INFO: [Synth 8-226] default block is never used [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:371]
-INFO: [Synth 8-226] default block is never used [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:389]
-INFO: [Synth 8-226] default block is never used [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:407]
-WARNING: [Synth 8-614] signal 'timeOutCnt' is read in the process but is not in the sensitivity list [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:460]
-WARNING: [Synth 8-3848] Net ERRTYPE_O in module/entity TWICtl does not have driver. [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:81]
-INFO: [Synth 8-256] done synthesizing module 'TWICtl' (1#1) [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:92]
-INFO: [Synth 8-226] default block is never used [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:293]
-WARNING: [Synth 8-614] signal 'initA' is read in the process but is not in the sensitivity list [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:288]
-INFO: [Synth 8-256] done synthesizing module 'TempSensorCtl' (2#1) [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'displ7seg' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/imports/Nexys4/displ7seg.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'displ7seg' (3#1) [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/imports/Nexys4/displ7seg.vhd:36]
-INFO: [Synth 8-638] synthesizing module 'mpg' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/imports/Nexys4/mpg.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'mpg' (4#1) [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/imports/Nexys4/mpg.vhd:44]
-INFO: [Synth 8-638] synthesizing module 'UART_rx' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UART_rx.vhd:47]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "gray" *) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:104]
+INFO: [Synth 8-226] default block is never used [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:317]
+INFO: [Synth 8-226] default block is never used [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:335]
+INFO: [Synth 8-226] default block is never used [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:353]
+INFO: [Synth 8-226] default block is never used [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:371]
+INFO: [Synth 8-226] default block is never used [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:389]
+INFO: [Synth 8-226] default block is never used [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:407]
+WARNING: [Synth 8-614] signal 'timeOutCnt' is read in the process but is not in the sensitivity list [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:460]
+WARNING: [Synth 8-3848] Net ERRTYPE_O in module/entity TWICtl does not have driver. [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'TWICtl' (1#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:92]
+INFO: [Synth 8-226] default block is never used [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:293]
+WARNING: [Synth 8-614] signal 'initA' is read in the process but is not in the sensitivity list [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:288]
+INFO: [Synth 8-256] done synthesizing module 'TempSensorCtl' (2#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/temp_sensor.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'HexToDecimalConverter' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/HexToDecimalConverter.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'HexToDecimalConverter' (3#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/HexToDecimalConverter.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'displ7seg' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/imports/Nexys4/displ7seg.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'displ7seg' (4#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/imports/Nexys4/displ7seg.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'mpg' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/imports/Nexys4/mpg.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'mpg' (5#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/imports/Nexys4/mpg.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'UART_rx' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UART_rx.vhd:47]
 	Parameter g_CLKS_PER_BIT bound to: 868 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'UART_rx' (5#1) [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UART_rx.vhd:47]
-INFO: [Synth 8-638] synthesizing module 'UART_tx' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UART_tx.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'UART_rx' (6#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UART_rx.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'UART_tx' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UART_tx.vhd:49]
 	Parameter g_CLKS_PER_BIT bound to: 868 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'UART_tx' (6#1) [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UART_tx.vhd:49]
-INFO: [Synth 8-638] synthesizing module 'UCC' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UCC.vhd:53]
-WARNING: [Synth 8-614] signal 'btn_start' is read in the process but is not in the sensitivity list [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UCC.vhd:74]
-INFO: [Synth 8-256] done synthesizing module 'UCC' (7#1) [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UCC.vhd:53]
-INFO: [Synth 8-256] done synthesizing module 'Nexys4' (8#1) [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'UART_tx' (7#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UART_tx.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'DecToAsciiConverter' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/DecToAsciiConverter.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'DecToAsciiConverter' (8#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/DecToAsciiConverter.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'UCC' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UCC.vhd:53]
+WARNING: [Synth 8-614] signal 'btn_start' is read in the process but is not in the sensitivity list [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UCC.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'UCC' (9#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UCC.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'Nexys4' (10#1) [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:54]
 WARNING: [Synth 8-3331] design TWICtl has unconnected port ERRTYPE_O
 WARNING: [Synth 8-3331] design Nexys4 has unconnected port led[15]
 WARNING: [Synth 8-3331] design Nexys4 has unconnected port led[14]
@@ -92,7 +96,7 @@ WARNING: [Synth 8-3331] design Nexys4 has unconnected port sw[2]
 WARNING: [Synth 8-3331] design Nexys4 has unconnected port sw[1]
 WARNING: [Synth 8-3331] design Nexys4 has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 321.180 ; gain = 111.422
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 349.820 ; gain = 140.434
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -101,41 +105,57 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[31] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[30] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[29] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[28] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[27] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[26] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[25] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[24] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[23] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[22] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[21] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[20] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[19] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[18] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[17] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
+WARNING: [Synth 8-3295] tying undriven pin afisor:Data[16] to constant 0 [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/Nexys4.vhd:113]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 321.180 ; gain = 111.422
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 349.820 ; gain = 140.434
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4_propImpl.xdc].
+Parsing XDC File [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/constrs_1/imports/Nexys4/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nexys4_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Nexys4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 635.348 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 665.219 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 635.348 ; gain = 425.590
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 665.219 ; gain = 455.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 635.348 ; gain = 425.590
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 665.219 ; gain = 455.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 635.348 ; gain = 425.590
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 665.219 ; gain = 455.832
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'sync_scl_reg' and it is trimmed from '3' to '2' bits. [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:132]
+WARNING: [Synth 8-3936] Found unconnected internal register 'sync_scl_reg' and it is trimmed from '3' to '2' bits. [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd:132]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
 INFO: [Synth 8-5546] ROM "busState" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "subState" won't be mapped to RAM because it is too sparse
@@ -168,7 +188,8 @@ INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because addres
 INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'stare_cur_reg' in module 'UCC'
-INFO: [Synth 8-5544] ROM "start" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stare_urm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "stare_urm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "stare_urm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
@@ -208,19 +229,21 @@ INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encod
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                 inceput |                              000 |                              000
-          incarcare_date |                              001 |                              001
-                  octet1 |                              010 |                              010
-             transmisie1 |                              011 |                              011
-                  octet2 |                              100 |                              100
-             transmisie2 |                              101 |                              101
-                  iSTATE |                              110 |                              110
+                 inceput |                             0000 |                             0000
+          incarcare_date |                             0001 |                             0001
+                  octet1 |                             0010 |                             0010
+             transmisie1 |                             0011 |                             0011
+                  octet2 |                             0100 |                             0100
+             transmisie2 |                             0101 |                             0101
+                  octet3 |                             0110 |                             0110
+             transmisie3 |                             0111 |                             0111
+                  iSTATE |                             1000 |                             1000
 *
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'stare_cur_reg' using encoding 'sequential' in module 'UCC'
-WARNING: [Synth 8-327] inferring latch for variable 'date_iesire_reg' [D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UCC.vhd:87]
+WARNING: [Synth 8-327] inferring latch for variable 'date_iesire_reg' [E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/new/UCC.vhd:84]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 635.348 ; gain = 425.590
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 665.219 ; gain = 455.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -261,27 +284,25 @@ Detailed RTL Component Info :
 	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 5     
 	   8 Input      8 Bit        Muxes := 2     
-	   9 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 2     
 	   5 Input      8 Bit        Muxes := 1     
-	   7 Input      8 Bit        Muxes := 1     
 	  12 Input      5 Bit        Muxes := 1     
 	   9 Input      4 Bit        Muxes := 1     
 	  27 Input      4 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
 	   8 Input      3 Bit        Muxes := 1     
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 6     
 	   5 Input      3 Bit        Muxes := 2     
 	  11 Input      3 Bit        Muxes := 1     
-	  10 Input      3 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 50    
 	   4 Input      1 Bit        Muxes := 26    
 	   3 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 9     
-	   9 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
 	   5 Input      1 Bit        Muxes := 11    
-	   7 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -393,9 +414,9 @@ Detailed RTL Component Info :
 Module UCC 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   7 Input      8 Bit        Muxes := 1     
-	  10 Input      3 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -411,11 +432,10 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5544] ROM "afisor/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "Inst_TempSensorCtl/Inst_TWICtl/subState" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "Inst_TempSensorCtl/retryCntEn" won't be mapped to RAM because it is too sparse
-DSP Report: Generating DSP realValue2, operation Mode is: A2*(B:0x271).
-DSP Report: register A is absorbed into DSP realValue2.
+INFO: [Synth 8-5546] ROM "Inst_TWICtl/subState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "retryCntEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "An0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+DSP Report: Generating DSP realValue2, operation Mode is: A*(B:0x271).
 DSP Report: operator realValue2 is absorbed into DSP realValue2.
 WARNING: [Synth 8-3331] design Nexys4 has unconnected port led[15]
 WARNING: [Synth 8-3331] design Nexys4 has unconnected port led[14]
@@ -456,10 +476,28 @@ INFO: [Synth 8-3886] merging instance 'Inst_TempSensorCtl/Inst_TWICtl/currAddr_r
 INFO: [Synth 8-3886] merging instance 'Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[1]' (FDE) to 'Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[2]'
 INFO: [Synth 8-3886] merging instance 'Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[2]' (FDE) to 'Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[4]'
 INFO: [Synth 8-3886] merging instance 'Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[3]' (FDE) to 'Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[5]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[5] )
-WARNING: [Synth 8-3332] Sequential element (Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[5]) is unused and will be removed from module Nexys4.
-WARNING: [Synth 8-3332] Sequential element (Inst_TempSensorCtl/Inst_TWICtl/currAddr_reg[4]) is unused and will be removed from module Nexys4.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Inst_TempSensorCtl/\Inst_TWICtl/currAddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Inst_TempSensorCtl/\Inst_TWICtl/currAddr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'unitate_cc/date_iesire_reg[7]' (LD) to 'unitate_cc/date_iesire_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\unitate_cc/date_iesire_reg[6] )
+INFO: [Synth 8-3886] merging instance 'b1_tx/r_TX_Data_reg[7]' (FDE) to 'b1_tx/r_TX_Data_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (b1_tx/\r_TX_Data_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (Inst_TWICtl/currAddr_reg[5]) is unused and will be removed from module TempSensorCtl.
+WARNING: [Synth 8-3332] Sequential element (Inst_TWICtl/currAddr_reg[4]) is unused and will be removed from module TempSensorCtl.
+WARNING: [Synth 8-3332] Sequential element (tempReg_reg[2]) is unused and will be removed from module TempSensorCtl.
+WARNING: [Synth 8-3332] Sequential element (tempReg_reg[1]) is unused and will be removed from module TempSensorCtl.
+WARNING: [Synth 8-3332] Sequential element (tempReg_reg[0]) is unused and will be removed from module TempSensorCtl.
+WARNING: [Synth 8-3332] Sequential element (fReady_reg) is unused and will be removed from module TempSensorCtl.
+WARNING: [Synth 8-3332] Sequential element (r_RX_Byte_reg[7]) is unused and will be removed from module UART_rx.
+WARNING: [Synth 8-3332] Sequential element (r_RX_Byte_reg[6]) is unused and will be removed from module UART_rx.
+WARNING: [Synth 8-3332] Sequential element (r_RX_Byte_reg[5]) is unused and will be removed from module UART_rx.
+WARNING: [Synth 8-3332] Sequential element (r_RX_Byte_reg[4]) is unused and will be removed from module UART_rx.
+WARNING: [Synth 8-3332] Sequential element (r_RX_Byte_reg[3]) is unused and will be removed from module UART_rx.
+WARNING: [Synth 8-3332] Sequential element (r_RX_Byte_reg[2]) is unused and will be removed from module UART_rx.
+WARNING: [Synth 8-3332] Sequential element (r_RX_Byte_reg[1]) is unused and will be removed from module UART_rx.
+WARNING: [Synth 8-3332] Sequential element (r_RX_Byte_reg[0]) is unused and will be removed from module UART_rx.
+WARNING: [Synth 8-3332] Sequential element (r_TX_Data_reg[6]) is unused and will be removed from module UART_tx.
+WARNING: [Synth 8-3332] Sequential element (unitate_cc/date_iesire_reg[6]) is unused and will be removed from module Nexys4.
 WARNING: [Synth 8-3332] Sequential element (btn_c/count_int1_reg[16]) is unused and will be removed from module Nexys4.
 WARNING: [Synth 8-3332] Sequential element (btn_c/count_int1_reg[17]) is unused and will be removed from module Nexys4.
 WARNING: [Synth 8-3332] Sequential element (btn_c/count_int1_reg[18]) is unused and will be removed from module Nexys4.
@@ -476,19 +514,21 @@ WARNING: [Synth 8-3332] Sequential element (btn_c/count_int1_reg[28]) is unused 
 WARNING: [Synth 8-3332] Sequential element (btn_c/count_int1_reg[29]) is unused and will be removed from module Nexys4.
 WARNING: [Synth 8-3332] Sequential element (btn_c/count_int1_reg[30]) is unused and will be removed from module Nexys4.
 WARNING: [Synth 8-3332] Sequential element (btn_c/count_int1_reg[31]) is unused and will be removed from module Nexys4.
+INFO: [Synth 8-3886] merging instance 'unitate_cc/date_iesire_reg[5]' (LD) to 'unitate_cc/date_iesire_reg[4]'
+INFO: [Synth 8-3886] merging instance 'b1_tx/r_TX_Data_reg[5]' (FDE) to 'b1_tx/r_TX_Data_reg[4]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 635.348 ; gain = 425.590
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 665.219 ; gain = 455.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Nexys4      | A2*(B:0x271) | 14     | 11     | -      | -      | 25     | 1    | 0    | -    | -    | -     | 0    | 0    | 
-+------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Nexys4      | A*(B:0x271) | 14     | 11     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -507,10 +547,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 640.699 ; gain = 430.941
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 685.590 ; gain = 476.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 658.133 ; gain = 448.375
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 702.344 ; gain = 492.957
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -522,7 +562,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 684.883 ; gain = 475.125
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 737.867 ; gain = 528.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -546,7 +586,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 684.883 ; gain = 475.125
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 737.867 ; gain = 528.480
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -559,7 +599,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 684.883 ; gain = 475.125
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 737.867 ; gain = 528.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -571,25 +611,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 684.883 ; gain = 475.125
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 737.867 ; gain = 528.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 684.883 ; gain = 475.125
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 737.867 ; gain = 528.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 684.883 ; gain = 475.125
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 737.867 ; gain = 528.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 684.883 ; gain = 475.125
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 737.867 ; gain = 528.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -602,62 +642,64 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+--------+------+
-|      |Cell    |Count |
-+------+--------+------+
-|1     |BUFG    |     1|
-|2     |CARRY4  |    97|
-|3     |DSP48E1 |     1|
-|4     |LUT1    |   125|
-|5     |LUT2    |    78|
-|6     |LUT3    |   175|
-|7     |LUT4    |   108|
-|8     |LUT5    |   162|
-|9     |LUT6    |   269|
-|10    |FDCE    |     3|
-|11    |FDRE    |   165|
-|12    |FDSE    |    26|
-|13    |LD      |     8|
-|14    |IBUF    |     4|
-|15    |IOBUF   |     2|
-|16    |OBUF    |    18|
-|17    |OBUFT   |    15|
-+------+--------+------+
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   130|
+|3     |DSP48E1_1 |     1|
+|4     |LUT1      |   129|
+|5     |LUT2      |   144|
+|6     |LUT3      |   222|
+|7     |LUT4      |   157|
+|8     |LUT5      |   186|
+|9     |LUT6      |   350|
+|10    |FDCE      |     4|
+|11    |FDRE      |   162|
+|12    |FDSE      |    26|
+|13    |LD        |     5|
+|14    |IBUF      |     4|
+|15    |IOBUF     |     2|
+|16    |OBUF      |    18|
+|17    |OBUFT     |    15|
++------+----------+------+
 
 Report Instance Areas: 
-+------+---------------------+--------------+------+
-|      |Instance             |Module        |Cells |
-+------+---------------------+--------------+------+
-|1     |top                  |              |  1257|
-|2     |  Inst_TempSensorCtl |TempSensorCtl |   291|
-|3     |    Inst_TWICtl      |TWICtl        |   219|
-|4     |  afisor             |displ7seg     |    88|
-|5     |  b1_rx              |UART_rx       |    67|
-|6     |  b1_tx              |UART_tx       |    66|
-|7     |  btn_c              |mpg           |    44|
-|8     |  btn_u              |mpg_0         |     3|
-|9     |  unitate_cc         |UCC           |   303|
-+------+---------------------+--------------+------+
++------+---------------------+----------------------+------+
+|      |Instance             |Module                |Cells |
++------+---------------------+----------------------+------+
+|1     |top                  |                      |  1556|
+|2     |  DecToAsciiUnit     |DecToAsciiConverter   |     2|
+|3     |  DecToAsciiZeci     |DecToAsciiConverter_0 |     2|
+|4     |  Inst_TempSensorCtl |TempSensorCtl         |   291|
+|5     |    Inst_TWICtl      |TWICtl                |   222|
+|6     |  afisor             |displ7seg             |    92|
+|7     |  b1_rx              |UART_rx               |    67|
+|8     |  b1_tx              |UART_tx               |    62|
+|9     |  btn_c              |mpg                   |    43|
+|10    |  btn_u              |mpg_1                 |     3|
+|11    |  unitate_cc         |UCC                   |   158|
++------+---------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 684.883 ; gain = 475.125
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 737.867 ; gain = 528.480
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 684.883 ; gain = 160.957
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 684.883 ; gain = 475.125
+Synthesis finished with 0 errors, 0 critical warnings and 68 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 737.867 ; gain = 184.906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 737.867 ; gain = 528.480
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 112 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 142 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 10 instances were transformed.
+  A total of 7 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
-  LD => LDCE: 8 instances
+  LD => LDCE: 5 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-96 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
+109 Infos, 123 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 684.883 ; gain = 475.125
-INFO: [Common 17-1381] The checkpoint 'D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth/ssc_bluetooth.runs/synth_1/Nexys4.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 684.883 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 21 17:41:14 2022...
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 737.867 ; gain = 507.809
+INFO: [Common 17-1381] The checkpoint 'E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.runs/synth_1/Nexys4.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 737.867 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 26 01:14:13 2022...

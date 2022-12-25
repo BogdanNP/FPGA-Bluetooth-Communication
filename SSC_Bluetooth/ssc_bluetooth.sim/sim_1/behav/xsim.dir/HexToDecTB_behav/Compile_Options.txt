@@ -1,0 +1,1 @@
+-wto "183c791981914170bec9cf39805b6792" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "HexToDecTB_behav" "xil_defaultlib.HexToDecTB" -log "elaborate.log" 

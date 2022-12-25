@@ -75,7 +75,7 @@ constant ONE_BIT_DEG: integer := 625;
 -- END Senzor Temperatura
 
 
-signal date:std_logic_vector(31 downto 0);
+signal date:std_logic_vector(31 downto 0) := (others => '0');
 signal rx_8:std_logic_vector(7 downto 0);
 
 signal btn_rst:std_logic;
@@ -86,11 +86,12 @@ signal trimitere_mesaje:std_logic_vector(7 downto 0);
 signal start:std_logic;
 signal activ:std_logic;
 signal done:std_logic;
+
+signal asciiUnit, asciiZeci: STD_LOGIC_VECTOR(7 downto 0);
+signal message: STD_LOGIC_VECTOR(23 downto 0);
 begin
 
 realValue <= STD_LOGIC_VECTOR(to_unsigned(integer((conv_integer(tempValue)) * ONE_BIT_DEG / 10000), 16));
---date<=x"000000" & rx_8;
-date <= (X"0000" & realValue);
 
 Inst_TempSensorCtl: TempSensorCtl
 generic map (CLOCKFREQ => 100)
@@ -102,7 +103,12 @@ port  map(
   ERR_O => tempErr,		
   CLK_I => clk,
   SRST_I => btn_rst);
-
+  
+DecimalConverter:entity WORK.HexToDecimalConverter port map
+(
+hexValue => realValue,
+decValue => date(15 downto 0)
+);
 
 afisor:entity WORK.displ7seg port map
 (
@@ -159,13 +165,29 @@ port map
     o_TX_Done=>done
 );
 
+DecToAsciiUnit:entity WORK.DecToAsciiConverter
+port map
+(
+    decDigit => date(3 downto 0),
+    asciiValue => asciiUnit
+);
+
+DecToAsciiZeci:entity WORK.DecToAsciiConverter
+port map
+(
+    decDigit => date(7 downto 4),
+    asciiValue => asciiZeci
+);
+
+message <= x"0A" & asciiZeci & asciiUnit;
+
 unitate_cc:entity WORK.UCC
 port map
 (
     clk=>clk,
     rst=>btn_rst,
     btn_start=>btn_start,
-    date_intrare=> realValue, --sw(15 downto 0),
+    date_intrare=> message, --sw(15 downto 0),
     activ=>activ,
     done=>done,
     date_iesire=>trimitere_mesaje,

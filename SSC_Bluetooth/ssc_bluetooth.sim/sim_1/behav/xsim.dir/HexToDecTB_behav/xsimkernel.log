@@ -1,0 +1,7 @@
+Running: xsim.dir/HexToDecTB_behav/xsimk.exe -simmode gui -wdb HexToDecTB_behav.wdb -simrunnum 0 -socket 56153
+Design successfully loaded
+Design Loading Memory Usage: 8852 KB (Peak: 8852 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 9612 KB (Peak: 9612 KB)
+Simulation CPU Usage: 30 ms

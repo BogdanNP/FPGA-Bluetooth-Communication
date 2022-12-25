@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Wed Dec 21 17:42:07 2022
-| Host             : DESKTOP-QUS580R running 64-bit major release  (build 9200)
+| Date             : Mon Dec 26 01:15:29 2022
+| Host             : DESKTOP-BEGSB2C running 64-bit major release  (build 9200)
 | Command          : report_power -file Nexys4_power_routed.rpt -pb Nexys4_power_summary_routed.pb -rpx Nexys4_power_routed.rpx
 | Design           : Nexys4
 | Device           : xc7a100tcsg324-1
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.116 |
-| Dynamic (W)              | 0.019 |
+| Total On-Chip Power (W)  | 0.127 |
+| Dynamic (W)              | 0.030 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
-| Max Ambient (C)          | 84.5  |
-| Junction Temperature (C) | 25.5  |
+| Max Ambient (C)          | 84.4  |
+| Junction Temperature (C) | 25.6  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -50,16 +50,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |     1184 |       --- |             --- |
-|   LUT as Logic |     0.001 |      733 |     63400 |            1.16 |
-|   CARRY4       |    <0.001 |       97 |     15850 |            0.61 |
-|   Register     |    <0.001 |      202 |    126800 |            0.16 |
+| Slice Logic    |     0.005 |     1484 |       --- |             --- |
+|   LUT as Logic |     0.005 |      939 |     63400 |            1.48 |
+|   CARRY4       |    <0.001 |      130 |     15850 |            0.82 |
+|   Register     |    <0.001 |      197 |    126800 |            0.16 |
 |   Others       |     0.000 |       22 |       --- |             --- |
-| Signals        |     0.001 |      949 |       --- |             --- |
+| Signals        |     0.004 |     1145 |       --- |             --- |
 | DSPs           |    <0.001 |        1 |       240 |            0.42 |
-| I/O            |     0.014 |       39 |       210 |           18.57 |
+| I/O            |     0.019 |       39 |       210 |           18.57 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.116 |          |           |                 |
+| Total          |     0.127 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.004 |      0.015 |
+| Vccint    |       1.000 |     0.027 |       0.012 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
-| Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |
+| Vcco33    |       3.300 |     0.009 |       0.005 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,17 +138,19 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| Nexys4               |     0.019 |
+| Nexys4               |     0.030 |
+|   DecToAsciiUnit     |    <0.001 |
+|   DecToAsciiZeci     |    <0.001 |
 |   Inst_TempSensorCtl |     0.001 |
-|     Inst_TWICtl      |    <0.001 |
+|     Inst_TWICtl      |     0.001 |
 |   TMP_SCL_IOBUF_inst |     0.000 |
 |   TMP_SDA_IOBUF_inst |     0.000 |
-|   afisor             |    <0.001 |
+|   afisor             |     0.001 |
 |   b1_rx              |    <0.001 |
 |   b1_tx              |    <0.001 |
 |   btn_c              |    <0.001 |
 |   btn_u              |    <0.001 |
-|   unitate_cc         |    <0.001 |
+|   unitate_cc         |     0.004 |
 +----------------------+-----------+
 
 

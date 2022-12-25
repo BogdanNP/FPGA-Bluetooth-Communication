@@ -40,7 +40,7 @@ signal rst:in std_logic;
 
 -- ce primesc
 signal btn_start:in std_logic;
-signal date_intrare:in std_logic_vector(15 downto 0);
+signal date_intrare:in std_logic_vector(23 downto 0);
 signal activ:in std_logic;
 signal done:in std_logic;
 
@@ -52,12 +52,10 @@ end UCC;
 
 architecture Behavioral of UCC is
 
-type stari is (inceput,incarcare_date,octet1,transmisie1,octet2,transmisie2,stop);
+type stari is (inceput,incarcare_date,octet1,transmisie1,octet2,transmisie2,octet3, transmisie3, stop);
 signal stare_cur:stari:=incarcare_date;
 signal stare_urm:stari:=incarcare_date;
 
-signal oc1:std_logic_vector(7 downto 0):="00000001";
-signal oc2:std_logic_vector(7 downto 0):="00000010";
 begin
 
 process(clk,rst)
@@ -71,7 +69,7 @@ end if;
 
 end process;
 
-process(stare_cur,activ,done,date_intrare,oc1,oc2)
+process(stare_cur,activ,done,date_intrare)
 begin
 
 case stare_cur is
@@ -81,23 +79,36 @@ when inceput=>  if btn_start='1' then
                     stare_urm<=inceput;
                 end if;
 when incarcare_date=>stare_urm<=octet1;
-                     --oc1<=date_intrare(15 downto 8);
-                     --oc2<=date_intrare(7 downto 0);
+
 when octet1=>stare_urm<=transmisie1;
-             date_iesire<=date_intrare(15 downto 8);
+             date_iesire<=date_intrare(23 downto 16);
+             
 when transmisie1=>if activ='0' and done='1' then
                         stare_urm<=octet2;
                   else
                         stare_urm<=transmisie1;
                   end if;
+                  
 when octet2=>stare_urm<=transmisie2;
-             date_iesire<=date_intrare(7 downto 0);
+           date_iesire<=date_intrare(15 downto 8);
+           
 when transmisie2=>if activ='0' and done='1' then
+                      stare_urm<=octet3;
+                else
+                      stare_urm<=transmisie2;
+                end if;
+                
+when octet3=>stare_urm<=transmisie3;
+             date_iesire<=date_intrare(7 downto 0);
+             
+when transmisie3=>if activ='0' and done='1' then
                         stare_urm<=stop;
                   else
-                        stare_urm<=transmisie2;
+                        stare_urm<=transmisie3;
                   end if;
+                  
 when others=>stare_urm<=inceput;
+
 end case;
 
 end process;
@@ -111,6 +122,8 @@ when octet1=>start<='1';
 when transmisie1=>start<='0';
 when octet2=>start<='1';
 when transmisie2=>start<='0';
+when octet3=>start<='1';
+when transmisie3=>start<='0';
 when others=>start<='0';
 end case;
 end process;
