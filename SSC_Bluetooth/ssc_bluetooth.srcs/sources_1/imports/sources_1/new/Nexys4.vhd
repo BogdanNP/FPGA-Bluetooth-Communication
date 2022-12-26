@@ -1,54 +1,24 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 04/07/2022 08:46:09 PM
--- Design Name: 
--- Module Name: Nexys4 - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 use IEEE.numeric_std.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity Nexys4 is
 Port 
 (
-signal clk:in std_logic;
-signal btn:in std_logic_vector(4 downto 0);
-signal sw:in std_logic_vector(15 downto 0);
-signal led:out std_logic_vector(15 downto 0);
-signal cat:out std_logic_vector(7 downto 0);
-signal an:out std_logic_vector(7 downto 0);
-signal RX:in std_logic;
-signal TX:out std_logic;
-
-signal TMP_SCL: inout std_logic;
-signal TMP_SDA: inout std_logic
- );
+    signal clk:in std_logic;
+    signal btn:in std_logic_vector(4 downto 0);
+    signal sw:in std_logic_vector(15 downto 0);
+    signal led:out std_logic_vector(15 downto 0);
+    signal cat:out std_logic_vector(7 downto 0);
+    signal an:out std_logic_vector(7 downto 0);
+    signal RX:in std_logic;
+    signal TX:out std_logic;
+    
+    signal TMP_SCL: inout std_logic;
+    signal TMP_SDA: inout std_logic
+);
 end Nexys4;
 
 architecture Behavioral of Nexys4 is
@@ -106,24 +76,24 @@ port  map(
   
 DecimalConverter:entity WORK.HexToDecimalConverter port map
 (
-hexValue => realValue,
-decValue => date(15 downto 0)
+    hexValue => realValue,
+    decValue => date(15 downto 0)
 );
 
 afisor:entity WORK.displ7seg port map
 (
-Clk=>clk,
-Rst=>btn_rst,
-Data=> date,
-An=>an,
-Seg=>cat
+    Clk=>clk,
+    Rst=>btn_rst,
+    Data=> date,
+    An=>an,
+    Seg=>cat
 );
 
 btn_c:entity WORK.mpg port map
 (
-btn=>btn(0),
-clk=>clk,
-en=>btn_rst
+    btn=>btn(0),
+    clk=>clk,
+    en=>btn_rst
 );
 
 btn_u:entity WORK.mpg port map
@@ -136,7 +106,7 @@ btn_u:entity WORK.mpg port map
 b1_rx:entity WORK.UART_rx
 generic map
 (
-g_CLKS_PER_BIT => 868
+    g_CLKS_PER_BIT => 868
 )
 port map
 (
