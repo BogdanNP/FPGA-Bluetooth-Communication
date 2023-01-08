@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Mon Dec 26 11:13:10 2022
+| Date             : Sun Jan 08 12:01:02 2023
 | Host             : DESKTOP-QUS580R running 64-bit major release  (build 9200)
 | Command          : report_power -file Nexys4_power_routed.rpt -pb Nexys4_power_summary_routed.pb -rpx Nexys4_power_routed.rpx
 | Design           : Nexys4
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.127 |
-| Dynamic (W)              | 0.030 |
+| Total On-Chip Power (W)  | 0.136 |
+| Dynamic (W)              | 0.039 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 84.4  |
@@ -50,16 +50,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.005 |     1484 |       --- |             --- |
-|   LUT as Logic |     0.005 |      939 |     63400 |            1.48 |
-|   CARRY4       |    <0.001 |      130 |     15850 |            0.82 |
-|   Register     |    <0.001 |      197 |    126800 |            0.16 |
-|   Others       |     0.000 |       22 |       --- |             --- |
-| Signals        |     0.004 |     1145 |       --- |             --- |
+| Slice Logic    |     0.011 |     1502 |       --- |             --- |
+|   LUT as Logic |     0.010 |      941 |     63400 |            1.48 |
+|   CARRY4       |    <0.001 |      138 |     15850 |            0.87 |
+|   Register     |    <0.001 |      203 |    126800 |            0.16 |
+|   F7/F8 Muxes  |    <0.001 |        1 |     63400 |           <0.01 |
+|   Others       |     0.000 |       24 |       --- |             --- |
+| Signals        |     0.009 |     1183 |       --- |             --- |
 | DSPs           |    <0.001 |        1 |       240 |            0.42 |
-| I/O            |     0.019 |       39 |       210 |           18.57 |
+| I/O            |     0.017 |       39 |       210 |           18.57 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.127 |          |           |                 |
+| Total          |     0.136 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.027 |       0.012 |      0.015 |
+| Vccint    |       1.000 |     0.037 |       0.022 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
 | Vcco33    |       3.300 |     0.009 |       0.005 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -138,11 +139,10 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| Nexys4               |     0.030 |
-|   DecToAsciiUnit     |    <0.001 |
-|   DecToAsciiZeci     |    <0.001 |
+| Nexys4               |     0.039 |
+|   DecimalConverter   |     0.009 |
 |   Inst_TempSensorCtl |     0.001 |
-|     Inst_TWICtl      |     0.001 |
+|     Inst_TWICtl      |    <0.001 |
 |   TMP_SCL_IOBUF_inst |     0.000 |
 |   TMP_SDA_IOBUF_inst |     0.000 |
 |   afisor             |     0.001 |
@@ -150,7 +150,7 @@ Table of Contents
 |   b1_tx              |    <0.001 |
 |   btn_c              |    <0.001 |
 |   btn_u              |    <0.001 |
-|   unitate_cc         |     0.004 |
+|   unitate_cc         |     0.006 |
 +----------------------+-----------+
 
 

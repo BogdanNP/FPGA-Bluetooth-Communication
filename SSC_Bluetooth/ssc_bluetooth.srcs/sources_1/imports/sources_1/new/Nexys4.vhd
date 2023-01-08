@@ -106,7 +106,7 @@ btn_u:entity WORK.mpg port map
 b1_rx:entity WORK.UART_rx
 generic map
 (
-    g_CLKS_PER_BIT => 868
+    g_CLKS_PER_BIT => 10416
 )
 port map
 (
@@ -120,10 +120,13 @@ port map
 --nexys 4 frequency 100MHz -> 100 * 10^6
 --g_CLKS_PER_BIT = 100 * 10 ^ 6 / 9600 = 10416
 
+-- if 10416 does not work, try 868
+
+
 b1_tx:entity WORK.UART_tx
 generic map
 (
-    g_CLKS_PER_BIT=> 868
+    g_CLKS_PER_BIT=> 10416
 )
 port map
 (

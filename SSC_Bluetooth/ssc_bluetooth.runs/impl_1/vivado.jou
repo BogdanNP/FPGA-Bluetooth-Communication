@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Mon Dec 26 11:12:33 2022
-# Process ID: 13160
+# Start of session at: Sun Jan 08 12:00:25 2023
+# Process ID: 15808
 # Current directory: D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth_GIT/SSC_Bluetooth/SSC_Bluetooth/ssc_bluetooth.runs/impl_1
 # Command line: vivado.exe -log Nexys4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Nexys4.tcl -notrace
 # Log file: D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth_GIT/SSC_Bluetooth/SSC_Bluetooth/ssc_bluetooth.runs/impl_1/Nexys4.vdi
