@@ -89,6 +89,10 @@ signal done:std_logic;
 
 signal asciiUnit, asciiZeci: STD_LOGIC_VECTOR(7 downto 0);
 signal message: STD_LOGIC_VECTOR(23 downto 0);
+
+signal clk_1_sec : STD_LOGIC := '0';
+signal broadcast: STD_LOGIC;
+signal send: STD_LOGIC;
 begin
 
 realValue <= STD_LOGIC_VECTOR(to_unsigned(integer((conv_integer(tempValue)) * ONE_BIT_DEG / 10000), 16));
@@ -181,12 +185,29 @@ port map
 
 message <= x"0A" & asciiZeci & asciiUnit;
 
+OneSecClock:entity WORK.FrequencyDivider
+port map
+(
+    CLK => clk,
+    CLK_1_sec => clk_1_sec
+);
+
+TempBroadcast:entity WORK.TemperatureBroadcast
+port map
+(
+    CLK => clk_1_sec,
+    CurrTemp => realValue,
+    Broadcast => broadcast
+);
+
+send <= btn_start or broadcast;
+
 unitate_cc:entity WORK.UCC
 port map
 (
     clk=>clk,
     rst=>btn_rst,
-    btn_start=>btn_start,
+    btn_start=>send,
     date_intrare=> message, --sw(15 downto 0),
     activ=>activ,
     done=>done,

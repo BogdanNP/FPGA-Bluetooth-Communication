@@ -18,6 +18,8 @@ set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   {E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/math_package.vhd}
   {E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/new/i2c.vhd}
+  {E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/TemperatureBroadcast.vhd}
+  {E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/FrequencyDivider.vhd}
   {E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/DecToAsciiConverter.vhd}
   {E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/imports/sources_1/imports/Nexys4/displ7seg.vhd}
   {E:/OneDrive - Technical University of Cluj-Napoca/ANUL III/SSC/Proiect/SSC_Bluetooth/ssc_bluetooth.srcs/sources_1/new/HexToDecimalConverter.vhd}
