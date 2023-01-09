@@ -157,7 +157,7 @@ port map
 b1_tx:entity WORK.UART_tx
 generic map
 (
-    g_CLKS_PER_BIT=> 868
+    g_CLKS_PER_BIT=> 10416
 )
 port map
 (
