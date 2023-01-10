@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Jan 10 13:24:22 2023
+# Process ID: 26300
+# Current directory: D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth_GIT/SSC_Bluetooth/SSC_Bluetooth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3688 D:\CTI\An3\SSC_P_sem1\SSC_Bluetooth_GIT\SSC_Bluetooth\SSC_Bluetooth\ssc_bluetooth.xpr
+# Log file: D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth_GIT/SSC_Bluetooth/SSC_Bluetooth/vivado.log
+# Journal file: D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth_GIT/SSC_Bluetooth/SSC_Bluetooth\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/CTI/An3/SSC_P_sem1/SSC_Bluetooth_GIT/SSC_Bluetooth/SSC_Bluetooth/ssc_bluetooth.xpr

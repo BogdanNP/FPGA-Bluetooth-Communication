@@ -93,6 +93,8 @@ signal message: STD_LOGIC_VECTOR(23 downto 0);
 signal clk_1_sec : STD_LOGIC := '0';
 signal broadcast: STD_LOGIC;
 signal send: STD_LOGIC;
+
+
 begin
 
 realValue <= STD_LOGIC_VECTOR(to_unsigned(integer((conv_integer(tempValue)) * ONE_BIT_DEG / 10000), 16));
@@ -198,6 +200,7 @@ port map
     CLK => clk_1_sec,
     CurrTemp => realValue,
     Broadcast => broadcast
+  
 );
 
 send <= btn_start or broadcast;

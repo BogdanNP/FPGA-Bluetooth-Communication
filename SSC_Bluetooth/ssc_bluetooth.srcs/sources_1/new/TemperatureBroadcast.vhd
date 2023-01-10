@@ -50,10 +50,11 @@ begin
         if (rising_edge(CLK)) then
             if prevTemp = CurrTemp then
                 Broadcast <= '0';
-            else Broadcast <= '1';
+            else 
+                Broadcast <= '1';
             end if;
             prevTemp <= CurrTemp;
-        end if;
+        end if;           
     end process;
 
 end Behavioral;

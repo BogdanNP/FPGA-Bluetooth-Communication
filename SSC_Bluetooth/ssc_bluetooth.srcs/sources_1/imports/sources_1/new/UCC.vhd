@@ -69,11 +69,11 @@ end if;
 
 end process;
 
-process(stare_cur,activ,done,date_intrare)
+process(stare_cur,activ,done,date_intrare, btn_start)
 begin
 
 case stare_cur is
-when inceput=>  if btn_start='1' then
+when inceput=>  if btn_start='1'  then
                     stare_urm<=incarcare_date;
                 else
                     stare_urm<=inceput;

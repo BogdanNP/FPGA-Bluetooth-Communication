@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Mon Jan 09 22:08:55 2023
-| Host         : DESKTOP-BEGSB2C running 64-bit major release  (build 9200)
+| Date         : Tue Jan 10 20:32:50 2023
+| Host         : DESKTOP-QUS580R running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Nexys4_control_sets_placed.rpt
 | Design       : Nexys4
 | Device       : xc7a100t
@@ -23,7 +23,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |    18 |
-| Unused register locations in slices containing registers |    65 |
+| Unused register locations in slices containing registers |    59 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              83 |           34 |
+| No           | No                    | No                     |              81 |           35 |
 | No           | No                    | Yes                    |               4 |            2 |
-| No           | Yes                   | No                     |              99 |           26 |
-| Yes          | No                    | No                     |              49 |           28 |
+| No           | Yes                   | No                     |              99 |           25 |
+| Yes          | No                    | No                     |              57 |           33 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              12 |            3 |
+| Yes          | Yes                   | No                     |              12 |            4 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -50,22 +50,22 @@ Table of Contents
 +------------------------+----------------------------------------------------------+----------------------------------------------+------------------+----------------+
 |  clk_IBUF_BUFG         | b1_rx/r_RX_DV                                            |                                              |                1 |              1 |
 |  clk_IBUF_BUFG         | btn_c/eqOp                                               |                                              |                2 |              2 |
+|  clk_IBUF_BUFG         | Inst_TempSensorCtl/retryCnt[3]_i_2_n_0                   | Inst_TempSensorCtl/retryCnt[3]_i_1_n_0       |                2 |              4 |
 |  clk_IBUF_BUFG         | Inst_TempSensorCtl/Inst_TWICtl/FSM_gray_state[3]_i_1_n_0 |                                              |                4 |              4 |
-|  clk_IBUF_BUFG         | Inst_TempSensorCtl/retryCnt[3]_i_2_n_0                   | Inst_TempSensorCtl/retryCnt[3]_i_1_n_0       |                1 |              4 |
-|  clk_IBUF_BUFG         | b1_tx/r_TX_Data[4]_i_1_n_0                               |                                              |                2 |              5 |
+|  clk_IBUF_BUFG         | b1_tx/r_TX_Data[4]_i_1_n_0                               |                                              |                1 |              5 |
 |  unitate_cc/E[0]       |                                                          |                                              |                2 |              5 |
-|  clk_IBUF_BUFG         |                                                          | Inst_TempSensorCtl/Inst_TWICtl/busFreeCnt0_2 |                3 |              8 |
-|  clk_IBUF_BUFG         | Inst_TempSensorCtl/Inst_TWICtl/dataByte[7]_i_1_n_0       |                                              |                3 |              8 |
+|  clk_IBUF_BUFG         |                                                          | Inst_TempSensorCtl/Inst_TWICtl/busFreeCnt0_2 |                2 |              8 |
 |  clk_IBUF_BUFG         | Inst_TempSensorCtl/Inst_TWICtl/sclCnt[7]_i_2_n_0         | Inst_TempSensorCtl/Inst_TWICtl/sclCnt0_0     |                2 |              8 |
-|  clk_IBUF_BUFG         | Inst_TempSensorCtl/Inst_TWICtl/temp_reg[0]               |                                              |                4 |              8 |
-|  clk_IBUF_BUFG         | b1_rx/r_Clk_Count                                        |                                              |                7 |             10 |
-|  clk_IBUF_BUFG         | b1_tx/r_Clk_Count[9]_i_1_n_0                             |                                              |                5 |             11 |
+|  clk_IBUF_BUFG         | Inst_TempSensorCtl/Inst_TWICtl/temp1                     |                                              |                3 |              8 |
+|  clk_IBUF_BUFG         | Inst_TempSensorCtl/Inst_TWICtl/dataByte[7]_i_1_n_0       |                                              |                5 |              8 |
+|  clk_IBUF_BUFG         | b1_rx/r_Clk_Count[13]_i_1__0_n_0                         |                                              |               10 |             14 |
+|  clk_IBUF_BUFG         | b1_tx/r_Clk_Count[13]_i_1_n_0                            |                                              |                7 |             15 |
 |  clk_IBUF_BUFG         |                                                          | Inst_TempSensorCtl/clear                     |                5 |             17 |
-|  OneSecClock/clk_1_sec |                                                          |                                              |                4 |             17 |
+|  OneSecClock/clk_1_sec |                                                          |                                              |                5 |             17 |
 |  clk_IBUF_BUFG         |                                                          | Inst_TempSensorCtl/Inst_TWICtl/p_2_out       |                5 |             20 |
 |  clk_IBUF_BUFG         |                                                          | btn_c/rst                                    |                7 |             27 |
 |  clk_IBUF_BUFG         |                                                          | OneSecClock/num[31]_i_1_n_0                  |                8 |             31 |
-|  clk_IBUF_BUFG         |                                                          |                                              |               28 |             61 |
+|  clk_IBUF_BUFG         |                                                          |                                              |               28 |             59 |
 +------------------------+----------------------------------------------------------+----------------------------------------------+------------------+----------------+
 
 
@@ -77,8 +77,8 @@ Table of Contents
 | 4      |                     2 |
 | 5      |                     2 |
 | 8      |                     4 |
-| 10     |                     1 |
-| 11     |                     1 |
+| 14     |                     1 |
+| 15     |                     1 |
 | 16+    |                     6 |
 +--------+-----------------------+
 

@@ -46,7 +46,7 @@ begin
     process(CLK)
     begin
         if (rising_edge(CLK)) then
-            if num = 100_000_000 then   -- Clock frequency is 100MHz
+            if num = 100_000 then   -- Clock frequency is 100MHz
                 CLK_1_sec <= '1';
                 num <= 0;
             else 
